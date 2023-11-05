@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title> landing page</title>
+  </head>
+  <body>
+    <section class="showcase">
+      <header>
+        <h2 class="logo">Travel page</h2>
+        <div class="toggle"></div>
+      </header>
+      <video src="./video.mp4" muted loop autoplay></video>
+
+      <div class="overlay"></div>
+      <div class="text">
+        <h2>Never Stop</h2>
+        <h2>exploring</h2>
+        <p>
+            “We live in a wonderful world that is full of beauty, charm and adventure. There is no end to the adventures we can have if only we seek them with our eyes open.” 
+        </p>
+        <a href="#">Explore More</a>
+      </div>
+      <ul class="social">
+        <li>
+          <a href="#"
+            ><img
+              src="https://i.ibb.co/x7P24fL/facebook.png"
+              alt="facebook-logo"
+          /></a>
+        </li>
+        <li>
+          <a href="#"
+            ><img src="https://i.ibb.co/Wnxq2Nq/twitter.png" alt="twitter-logo"
+          /></a>
+        </li>
+        <li>
+          <a href="#"
+            ><img
+              src="https://i.ibb.co/ySwtH4B/instagram.png"
+              alt="instagram-logo"
+          /></a>
+        </li>
+      </ul>
+    </section>
+
+    <div class="menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Places</a></li>
+        <li><a href="#">Destination</a></li>
+        <li><a href="#">Booking</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <script>
+      const menuToggle = document.querySelector(".toggle");
+      const showcase = document.querySelector(".showcase");
+
+      menuToggle.addEventListener("click", () => {
+        menuToggle.classList.toggle("active");
+        showcase.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
